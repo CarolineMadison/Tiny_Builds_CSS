@@ -2,20 +2,41 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <title>3D_Cube</title>
     <link rel="stylesheet" href="styles.css">
 </head>
   <body>
-    <div class="wrap">
+    <div class="scene">
         <div class="cube">
-            <div class="front">front</div>
-            <div class="back cube-wrap vertical">back</div>
-            <div class="top cube-wrap vertical">top</div>
-            <div class="bottom cube-wrap vertical">bottom</div>
-            <div class="left">left</div>
-            <div class="right">right</div>
+          <div class="cube__face cube__face--front">all</div>
+          <div class="cube__face cube__face--back">you</div>
+          <div class="cube__face cube__face--right">need</div>
+          <div class="cube__face cube__face--left">is</div>
+          <div class="cube__face cube__face--top">love</div>
+          <div class="cube__face cube__face--bottom">&#10084;&#65039;</div>
         </div>
-    </div>
+      </div>
+      <p class="radio-group">
+        <label>
+          <input type="radio" name="rotate-cube-side" value="front" checked /> front
+        </label>
+        <label>
+          <input type="radio" name="rotate-cube-side" value="right" /> right
+        </label>
+        <label>
+          <input type="radio" name="rotate-cube-side" value="back" /> back
+        </label>
+        <label>
+          <input type="radio" name="rotate-cube-side" value="left" /> left
+        </label>
+        <label>
+          <input type="radio" name="rotate-cube-side" value="top" /> top
+        </label>
+        <label>
+          <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+        </label>
+      </p>
+    <script src="./main.js"></script>
   </body>
 </html>
