@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #151515;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    padding: 5px;
+    color: #fff;
+}
+
+/* ======================== */
+
+.scene {
+    width: 300px;
+    height: 500px;
+    background: url('./background.jpeg') center no-repeat;
+    background-size: cover;
+    border: 10px solid #191919;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.scene img {
+    position: absolute;
+}
+
+.stars {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: stars-rotate 100s linear forwards;
+}
+
+.astronaut {
+    top: 100px;
+    right: -40px;
+    width: 75px;
+    animation: astronaut-move 30s forwards;
+}
+
+.ship {
+    top: 60px;
+    left: 120px;
+    width: 50px;
+    transform: scale(0);
+    animation: ship-move 30s 3s forwards;
+}
+
+.comet {
+    top: 150px;
+    left: -295px;
+    width: 300px;
+    animation: comet-move 20s 5s forwards;
+}
+
+.nashville {
+    bottom: -1px;
+    right: 0px;
+    width: 300px;
+    height: 200px;
+}
+
+.disco {
+    top: -70px;
+    left: -30px;
+    width: 175px;
+    animation: disco-rotate 100s linear forwards;
+}
+
+.neon {
+    top: 200px;
+    right: 0px;
+    width: 100px;
+    animation: neon-flash .5s infinite;
+}
+
+@keyframes astronaut-move {
+    to {
+        transform:
+            translate(-300px, -150px) rotate(-360deg);
+    }
+}
+
+@keyframes ship-move {
+    25% {
+        transform: scale(.5) translate(-170px, -25px);
+    }
+
+    50%,
+    100% {
+        transform: scale(4) translate(250px, 300px);
+    }
+}
+
+@keyframes stars-rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes comet-move {
+    to {
+        transform:
+            translate(500px, -150px);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes disco-rotate {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes neon-flash {
+    0%    { opacity: 0; }
+    20%   { opacity: 1; }
+    80%   { opacity: 0; }
+    100%  { opacity: 1; }
+}
