@@ -1,4 +1,4 @@
-<h4 align="center">This repo houses a collection of tiny projects I've built and motified from various tutorials.</h4>
+<h4 align="center">This repo houses a collection of projects I've built and motified using various tutorials.</h4>
 
 <p align="center">
 <img src="https://freeiconshop.com/wp-content/uploads/edd/css-flat.png" alt="CSS" height="60" style="vertical-align:top; margin:4px">
