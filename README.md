@@ -1,4 +1,4 @@
-### This repo houses projects I've built from various tutorials and Instagram code snippets.
+<h2 aligh="center">This repo houses various code snippets and tutorials I've found while web surfing.</h2>
 
 <p align="center">
 <img src="https://freeiconshop.com/wp-content/uploads/edd/css-solid.png" alt="CSS" height="60" style="vertical-align:top; margin:4px">
