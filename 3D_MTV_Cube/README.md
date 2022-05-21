@@ -5,7 +5,8 @@
   
 [Spotify's Web API](https://developer.spotify.com/)
   
-  <p>and on turn will return the user's top six most played songs</p>
+  <p>and on turn will return the user's top six most played songs</p><br>
+ 
   
 <p align="center">
   <img src="https://freeiconshop.com/wp-content/uploads/edd/css-flat.png" alt="CSS" height="60" style="vertical-align:top; margin:4px">
