@@ -5,8 +5,10 @@
 [Listen on Spotify](https://open.spotify.com/show/484vPtrm5iFZXDIrGtAu2Y)
 
   
- Progression Images:
+<div>
+  <p>Animation Sequences (GIFs):</p>
+</div>
   
 <div align="center">
-  <img width="400" height="400" src="https://github.com/CarolineMadison/Tiny_Builds_CSS/blob/master/ENYC_Logo/Progression_Images/ENYC-V2.png" />
+  <img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/1c96ac7b-1b3f-40e6-9dc2-f1a203371653.gif?ClientID=vimeo-core-prod&Date=1653143161&Signature=e41cc1e54c97274531eb60ec4217bf07bfac510b" />
 </div>
