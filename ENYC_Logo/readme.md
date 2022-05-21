@@ -1,5 +1,11 @@
+<p align="center">
+  <img src="https://freeiconshop.com/wp-content/uploads/edd/css-flat.png" alt="CSS" height="60" style="vertical-align:top; margin:4px">
+  <img src="https://freeiconshop.com/wp-content/uploads/edd/html-flat.png" alt="HTML" height="60" style="vertical-align:top; margin:4px">
+</p>
+
 <div align="center">
-  <p>This logo is designed by Caroline Madison for Jason Allman and Kellen Cole, hosts of the East Nashville Yacht Club Podcast</p
+  <p>This logo is designed by Caroline Madison for Jason Allman and Kellen Cole,<br> 
+    hosts of the East Nashville Yacht Club Podcast</p
 </div>
 
 [Listen on Spotify](https://open.spotify.com/show/484vPtrm5iFZXDIrGtAu2Y)
