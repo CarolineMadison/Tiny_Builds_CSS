@@ -12,6 +12,9 @@
   <img src="https://freeiconshop.com/wp-content/uploads/edd/css-flat.png" alt="CSS" height="60" style="vertical-align:top; margin:4px">
   <img src="https://freeiconshop.com/wp-content/uploads/edd/js-flat.png" alt="Javascript" height="60" style="vertical-align:top; margin:4px">
   <img src="https://freeiconshop.com/wp-content/uploads/edd/html-flat.png" alt="HTML" height="60" style="vertical-align:top; margin:4px">
+  <p>
+    <img src="" alt="REACT" height="60" style="vertical-align:top; margin:4px">
+  </p>
 </p>
   
 </div>
