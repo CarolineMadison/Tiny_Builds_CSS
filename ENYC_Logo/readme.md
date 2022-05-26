@@ -12,10 +12,9 @@
 
   
 <div>
-  <h1>GIFs</h1>
+  <h1>GIFs:</h1>
 </div>
   
-
 <div align="center">
   
   <h3>Prototype</h3>
@@ -23,5 +22,6 @@
 
   <h3>Version 1</h3>
   <img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/ba1ee424-c3c2-4558-81c1-bcfde11cd360.gif?ClientID=vimeo-core-prod&Date=1653602261&Signature=4f21c587ca63673344cd11971459b28cafa13a6a" />
-</div>
+
+  </div>
 
