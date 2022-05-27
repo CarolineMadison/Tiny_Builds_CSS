@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151515;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    padding: 5px;
+    color: black;
+}
+
+.spinner {
+    width: 150px;
+    height: 150px;
+    border-left: 30px solid rgb(243, 7, 46);
+    border-radius: 100%;
+    filter: drop-shadow(10 0 1.75rem rgb(243, 7, 46));
+    animation: rightrotate 900ms linear infinite;
+}
+
+.spinner::before {
+    width: 120px;
+    height: 120px;
+    top: calc(50% - 45px);
+    left: calc(50% - 45px);
+    /* border: 0; */
+    border-left: 20px solid green;
+    animation: none;
+    filter: drop-shadow(0 0 1.75rem green);
+}
+
+.spinner::before, .spinner::after {
+    content: '';
+    width: 90px;
+    height: 90px;
+    display: block;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+    border-right: 10px solid #3aB6ff;
+    border-radius: 100%;
+    animation: leftrotate 900ms linear infinite;
+    /* filter: drop-shadow(0 0 1.75rem #3aB6ff); */
+}
+
+.spinner::after {
+    width: 60px;
+    height: 60px;
+    top: calc(50% - 45px);
+    left: calc(50% - 45px);
+    border: 0;
+    border-radius: 100%;
+    border-left: 4px solid #ffbe0b;
+    animation: rightrotate 900ms linear infinite;
+    filter: drop-shadow(0 0 1.75rem #ffbe0b);
+}
+
+@keyframes rightrotate {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(720deg);}
+}
+
+@keyframes leftrotate {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+}
