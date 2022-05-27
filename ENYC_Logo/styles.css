@@ -24,9 +24,9 @@ body {
 .icon {
     color: antiquewhite;
     animation: first_color .5s infinite alternate;
-    font-size: 75px;
+    font-size: 95px;
     z-index: 9;
-    margin-bottom: -25px;
+    margin-bottom: -30px;
 }
 
 /*Adding the different animation names for the different color effects.*/
@@ -43,7 +43,7 @@ body {
 }
 
 .icon:nth-child(1) {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 
@@ -107,22 +107,22 @@ h1 {
 }
 
 .circle {
-    width: 500px;
-    height: 500px;
+    width: 640px;
+    height: 640px;
     background: url('./Images/stars.jpeg') center no-repeat;
     background-size: cover;
-    border: 10px solid rgb(227, 79, 26);
-    border-radius: 100%;
+    /* border: 7px solid rgb(227, 79, 26); */
     position: relative;
     overflow: hidden;
 }
 
 img {
-    max-width: 100%;
+    max-width: 110%;
     height: auto;
 }
 
 .nashville {
-    margin-top: -120px;
+    margin-left: -50px;
+    margin-top: -185px;
     filter: drop-shadow(0 0 1.75rem rgb(250, 146, 42));
 }
