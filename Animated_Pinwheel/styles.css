@@ -13,8 +13,8 @@ body {
 
 .pinwheel div:after {
     content: "";
-    width: 3px;
-    height: 100px;
+    width: 4px;
+    height: 110px;
     right: 50%;
     position: absolute;
     background:rgba(216,16,0,.4);;
@@ -42,7 +42,7 @@ body {
     content: "";
     position: absolute;
     width: 4px;
-    height: 100px;
+    height: 115px;
     background: rgba(255, 166, 0, 0.412);
     box-shadow: inset 0 0 2px rgba(255, 166, 0, 0.412),
     0 0 3px 2px rgba(255, 166, 0, 0.412),
@@ -51,11 +51,6 @@ body {
 
 .test {
     animation: rotateTest 4s ease-in-out 0s infinite alternate;
-}
-
-.container {
-    border: 5px solid green;
-    position: relative;
 }
 
 .rot30deg {
