@@ -1,3 +1,11 @@
+<div align="center">
+  
+#### This is a CodePen find that I refactored using create-react-app.
+
+[Link to Starter Code](https://codepen.io/freeCodeCamp/pen/eyLYXE)
+
+</div>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
