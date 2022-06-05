@@ -25,7 +25,6 @@ li {
 }
 
 li:last-child {
-  /* // There's no science in using "10" here. In all my testing, this delivered the best results. */
   flex-grow: 10;
 }
 
