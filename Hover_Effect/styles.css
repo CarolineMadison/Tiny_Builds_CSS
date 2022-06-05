@@ -1,167 +1,92 @@
-.view {
-	width: 316px;
-	height: 216px;
-	margin: 10px;
-	float: left;
-	position: relative;
-	border: 8px solid #fff;
-	box-shadow: 1px 1px 2px rgba(0,0,0,0.05);
-	background: #333;
-	perspective: 500px;
+/* // BASIC */
+
+* {
+  margin: 0;
+  padding: 0;
+
 }
 
-.view .slice{
-	width: 60px;
-	height: 100%;
-	z-index: 100;
-	transform-style: preserve-3d;
-	transform-origin: left center;
-	transition: transform 150ms ease-in-out;
-	
+body {
+  height: 100vh;
+ 
+  place-content: center;
+  background: black;
 }
 
-.view div.view-back{
-	width: 50%;
-	height: 100%;
-	position: absolute;
-	right: 0;
-	background: #666;
-	z-index: 0;
+ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.view-back span {
-	display: block;
-	float: right;
-	padding: 5px 20px 5px;
-	width: 100%;
-	text-align: right;
-	font-size: 16px;
-	color: rgba(255,255,255,0.6);
+li {
+  height: 25vh;
+  flex-grow: 1;
+  list-style: none;
 }
 
-.view-back span:first-child {
-	padding-top: 20px;
+li:last-child {
+  /* // There's no science in using "10" here. In all my testing, this delivered the best results. */
+  flex-grow: 10;
 }
 
-.view-back a {
-	display: bock;
-	font-size: 18px;
-	color: rgba(255,255,255,0.4);
-	position: absolute;
-	right: 15px;
-	bottom: 15px;
-	border: 2px solid rgba(255,255,255,0.3);
-	border-radius: 50%;
-	width: 30px;
-	height: 30px;
-	line-height: 22px;
-	text-align: center;
-	font-weight: 700;
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray;
+    /* IE5+ */
+    -webkit-filter: grayscale(1);
+    /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .3s ease-in-out;
+    transition-delay: .2s;
 }
 
-.view-back a:hover {
-	color: #fff;
-	border-color: #fff;
+img:hover {
+  filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01)
 }
 
-.view-back span[data-icon]:before {
-    content: attr(data-icon);
-    font-family: 'icons';
-    color: #aaa;
-	color: rgba(255,255,255,0.2);
-	text-shadow: 0 0 1px rgba(255,255,255,0.2);
-	padding-right: 5px;
+/* // ADVANCED
+
+// Portrait */
+
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 30vh;
+  }
 }
 
-.view .s2, 
-.view .s3, 
-.view .s4, 
-.view .s5 {
-	transform: translateX(60px);
+/* // Short screens */
+
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
+  }
+}
+/* 
+// Smaller screens in portrait */
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    height: auto;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
 }
 
-.view .s1 {
-	background-position: 0px 0px;
+div {
+  height: 100%;
+  width: 100%;
 }
-.view .s2 {
-	background-position: -60px 0px;
-}
-.view .s3 {
-	background-position: -120px 0px;
-}
-.view .s4 {
-	background-position: -180px 0px;
-}
-.view .s5 {
-	background-position: -240px 0px;
-}
-
-.view .overlay {
-	width: 60px;
-	height: 100%;
-	opacity: 0;
-	position: absolute;
-	transition: opacity 150ms ease-in-out;
-}
-
-.view:hover .overlay {
-	opacity: 1;
-}
-
-.view img {
-	position: absolute;
-	z-index: 0;
-	transition: left 0.3s ease-in-out;
-}
-
-.view {
-	overflow: hidden;
-}
-
-.view:hover img {
-	left: -85px;
-}
-
-.view div.view-back {
-	background: #666;
-}
-
-.view {
-	perspective: 1050px;
-}
-
-.view div {
-	transition: all 0.3s ease-in-out;
-}
-
-.view:hover .s2{
-	transform: translate3d(59px,0,0) rotate3d(0,1,0,-45deg);
-}
-.view:hover .s3, 
-.view:hover .s5{
-	transform: translate3d(59px,0,0) rotate3d(0,1,0,90deg);
-}
-.view:hover .s4{
-	transform: translate3d(59px,0,0) rotate3d(0,1,0,-90deg);
-}
-
-.view .s2 > .overlay {
-	background: linear-gradient(right, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 100%);
-}
-
-.view .s3 > .overlay {
-	background: linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.2) 100%);
-}
-
-.view .s4 > .overlay {
-	background: linear-gradient(right, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.2) 100%);
-}
-
-.view .s5 > .overlay {
-	background: linear-gradient(left, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
-}
-
-.view div.view-back{
-	background: linear-gradient(left, #0a0a0a 0%,#666666 100%);
-}
-
