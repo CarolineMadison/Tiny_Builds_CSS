@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: #85C1E9;
+}
+
+
+.hill{
+    position: absolute;
+    bottom: 0px;
+    height: 70%;
+    width: 100%;
+    z-index: 3;
+}
+
+.sun{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: rgb(243,156,18);
+    box-shadow: 0px 0px 15px rgb(243,156,18),
+    0px 0px 15px rgb(243,156,18);
+    z-index: 2;
+    animation: anime1 15s linear forwards;
+}
+
+
+@keyframes anime1{
+    0%{
+        top: 50%;
+        box-shadow: 0px 0px 15px rgb(243,156,18),
+    0px 0px 15px rgb(243,156,18);
+    background: rgb(243,156,18);
+    }
+    100%{
+        top: 8%;
+        background: rgb(232, 232, 6);
+        box-shadow: 0px 0px 50px rgb(232, 232, 6),
+        0px 0px 150px rgb(232, 232, 6);
+    }
+}
+
+.dark{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    background: rgba(13, 19, 24, 0.7);
+    animation: anime2 10s linear forwards;
+}
+@keyframes anime2{
+    0%{
+        background: rgba(13, 19, 24, 0.7);
+    }
+    100%{
+        background: rgba(13, 19, 24, 0);
+    }
+}
+
+.cloud {
+    height: 300px;
+    position: absolute;
+    top: 10%;
+    left: -20%;
+    animation: anime3 15s linear forwards;
+}
+
+.cloud2 {
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    left: -20%;
+    animation: anime3 15s linear forwards;
+}
+
+@keyframes anime3{
+    0%{
+        left: -10%;
+    }
+    100%{
+        left: 20%;
+    }
+}
+
+.birds{
+    position: absolute;
+    left: -15%;
+    top: 20%;
+    width: 140px;
+    height: 70px;
+    animation: anime4 13s linear forwards;
+    z-index: 4;
+}
+
+@keyframes anime4{
+    0%{
+        left: -15%;
+        top: 20%;
+    }
+    35%{
+        top: 40%;
+    }
+    100%{
+        left: 120%;
+        top: 20%;
+    }
+}
+
+@keyframes anime5{
+    0%{
+        left: -21%;
+    }100%{
+        left: 50%;
+    }
+}
+
+.car-right {
+    position: absolute;
+    top: 86%;
+    left: -100px;
+    z-index: 10;
+    background-color: red;
+    animation-duration: 4s;
+    animation-name: goRight;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes goRight {
+    from {
+      transform: translate(0,0);
+    }
+  
+    to {
+      transform: translate(1920px,0);
+    }
+  }
