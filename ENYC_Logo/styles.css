@@ -24,7 +24,7 @@ body {
 .icon {
     color: antiquewhite;
     animation: first_color .5s infinite alternate;
-    font-size: 75px;
+    font-size: 93px;
     z-index: 9;
     margin-bottom: -25px;
 }
@@ -107,12 +107,12 @@ h1 {
 }
 
 .circle {
-    width: 500px;
-    height: 500px;
+    width: 650px;
+    height: 650px;
     background: url('./Images/stars.jpeg') center no-repeat;
     background-size: cover;
-    border: 10px solid rgb(227, 79, 26);
-    border-radius: 100%;
+    /* border: 10px solid rgb(227, 79, 26);
+    border-radius: 100%; */
     position: relative;
     overflow: hidden;
 }
@@ -123,6 +123,9 @@ img {
 }
 
 .nashville {
-    margin-top: -120px;
+    margin-top: -200px;
     filter: drop-shadow(0 0 1.75rem rgb(250, 146, 42));
+    width: 120%;
+    height: auto;
+    margin-left: -50px;
 }
