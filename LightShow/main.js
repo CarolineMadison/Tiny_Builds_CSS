@@ -115,7 +115,7 @@ function drawParticles(p) {
   ctx.fill();
 }
 
-// Draw skyline and text
+// Draw Nashville
 var img = new Image();
 function drawScene() {
   ctx.lineWidth = 3;
