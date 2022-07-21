@@ -10,6 +10,9 @@
 
 // Some Js for audio toggle
 
+//Original Source Code found at:
+//https://codepen.io/Wujek_Greg/pen/EpJwaj
+
 var music = document.getElementById("music");
 var isPlaying = false;
 music.volume = 0.2;
